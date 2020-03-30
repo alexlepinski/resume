@@ -13,7 +13,7 @@
 
 \usepackage{fontspec}
 \usepackage{graphicx}
-\usepackage[margin=0.6in]{geometry}
+\usepackage[margin=1.0in]{geometry}
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{parskip}
 \usepackage{hyperref}
@@ -23,11 +23,11 @@
 \usepackage{titlesec} % To customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 % Spacing around sections
-\titlespacing{\section}{0pt}{3pt}{3pt} 
+\titlespacing{\section}{0pt}{4pt}{4pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 
 % Table format for sections
-\newenvironment{sectiontable}{ \begin{tabular}{p{16mm}|p{16cm}} }{ \end{tabular} }
+\newenvironment{sectiontable}{ \begin{tabular}{p{16mm}|p{14.5cm}} }{ \end{tabular} }
 
 % Icons
 \newcommand{\phoneicon}{\includegraphics[height=2.5mm,keepaspectratio]{phone.png}}
@@ -41,40 +41,33 @@
 %--------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %--------------------------------------------------------------------
-\par{\centering{\Huge Alex Lepinski}\par}
+\par{\centering{\LARGE Alex Lepinski}\par}
 
 \begin{center}{\def\arraystretch{1.5}
 \begin{tabular}{ccc}
     \hline\hline
     \emailicon  \space alexjlepinski@gmail.com &
-    \githubicon \space \url{https://AlexLepinski.github.io}\\
+    \linkedinicon \space \url{linkedin.com/in/alex-lepinski}\\
 	\hline\hline
 \end{tabular}
 }\end{center}
-
-%--------------------------------------------------------------------
-%	EDUCATION
-%--------------------------------------------------------------------
-\vspace*{-\baselineskip}
-\vspace{3mm}
 
 
 %--------------------------------------------------------------------
 %	TECHNICAL SKILLS 
 %--------------------------------------------------------------------
 \vspace*{-\baselineskip}
-\vspace{5mm}
+\vspace{7mm}
 
 \section{Technical Skills}
 
 \begin{tabular}{rp{13.1cm}}
 \textbf{\space Programming Languages}
-	&  \textsc{C\texttt{\#}}, TypeScript, JavaScript,
-    Java, LESS, Sass, CSS, T-SQL\\
-\textbf{\space Frameworks \& Tools}
-	& React JS, VueJS, Docker, Kubernetes, ASP.NET, ASP.NET Core, NodeJS, Azure, \\
-	& Amazon Web Services, Jest, Enzyme, Storybook, Babel, Webpack, Swagger, \\ 
-	& GraphQL,  React Router, HTML5, Razor, Spring, Entity Framework SSIS, Git \\
+	& TypeScript, JavaScript,  \textsc{C\texttt{\#}}, 
+    Java, CSS, LESS/SASS, T-SQL\\
+\textbf{\space Frameworks, Tools, \& Cloud}
+	& React JS, VueJS, Docker, Kubernetes, ASP.NET, ASP.NET Core, \\
+	& NodeJS,  Amazon Web Services, GraphQL, Redux, Jest \\ 
 \end{tabular}
 \vspace*{-\baselineskip}
 \vspace{3mm}
@@ -88,22 +81,38 @@
 \section{Work Experience}
 
 \begin{sectiontable}
+{\small\textsc{june 2019}} & \textbf{Front-End Engineer}\\
+{\small\emph{Present}} & Mainz Brady - Flex, Nike - \emph{\small Beaverton, OR}\\
+                & \rule{0pt}{2.5ex} 
+\begin{minipage}[t]{\linewidth}
+\begin{itemize} \setlength\itemsep{.5em}
+	\item Developed, tested, and maintained an asset management front-end application to view, modify, and search assets written in React, Redux, and a NodeJS GraphQL server.
+
+	\item End-to-end testing of microservice Java APIs with Postman. 
+
+	\item Maintained CI and CD pipelines using Jenkins and AWS.
+	
+	\item Developed a shared video player component to be utilized across Nike.com websites using VideoJS and TypeScript.
+
+	\item Created proof-of-concept shoppable product experiences using React.
+
+\end{itemize} 
+\end{minipage}
+\end{sectiontable}
+
+%--------------------------------------------------------------------
+
+\begin{sectiontable}
 {\small\textsc{apr. 2018}} & \textbf{Full Stack Developer}\\
-{\small\emph{Present}} & Jet Global - \emph{\small Portland, OR}\\
+{\small\textsc{june 2019}} & Jet Global - \emph{\small Portland, OR}\\
                 & \rule{0pt}{2.5ex} 
 \begin{minipage}[t]{\linewidth}
 \begin{itemize} \setlength\itemsep{.3em}
-	\item Developed and migrated existing front-end code to a modern React app using TypeScript
-	
-	\item Wrote back-end services in \textsc{C\texttt{\#}} and exposed REST APIs in .NET and .NET Core
-	
-	\item Added Storybook to help develop reusable React components
-	
-	\item Added Jest and Enzyme for front-end testing
-	
-	\item Assisted with adding JavaScript testing in Azure Build Pipelines
-	
-	\item Created NPM Azure Artifacts and utilized CI/CD
+	\item Maintained, developed, and tested a large scale application and added functionality within Jet Budgets.
+
+	\item Drove modernization of the front-end application from Razor with jQuery to SPAs using React and designed new web patterns and added Jest with Enzyme and Storybook to establish testing. 
+
+	\item Wrote \textsc{C\texttt{\#}}  backend testing and added APIs to interact with Jet's Reporting Engine using technologies including Entity Framework, .NET, .NET Core, and Sql Server.
 
 \end{itemize} 
 \end{minipage}
@@ -116,70 +125,24 @@
 {\small\textsc{apr. 2018}} & Center for Applied Systems and Software - \emph{\small Corvallis, OR}\\
                 & \rule{0pt}{2.5ex} 
 \begin{minipage}[t]{\linewidth}
-\begin{itemize} \setlength\itemsep{.3em}
+\begin{itemize} \setlength\itemsep{.3em} 
+	\item Created microservice web-applications for Smarter Balanced to interact, understand, and search standardized test questions using .NET Core, Java, and React. Developed a NodeJS application to dynamically generate test questions with related scoring information to a PDF.
 
-	\item Created modern TypeScript SPA using React with .NET Core, .NET 4.6, Java Spring, and NodeJS
+	\item Led a team to create an application for USDA to track the plant life cycles using technologies including .NET, SQL Server, SSRS, and React. Created a large data visualization of crop plantings to compare planting results to historical data.
 
-	\item Created and hosted Docker containers using Kubernetes in AWS
+	\item Utilized TravisCI to automate testing, building, and deployment of applications to cloud services using Amazon Web Services.
 
-	\item Utilized Jest and Enzyme for front-end testing and Storybook for development of React components
+	\item Managed a team of 6 intern software developers, teaching them fundamentals of software engineering while developing real-world applications.
 
-	\item Created NPM packages for sharing reusable React components
-
-	\item Created FOSS .NET core apps for Smarter Balanced and .NET apps for USDA and OSU
-
-	\item Utilized TravisCI to automate testing, building, and deployment of applications to cloud services
-
-	\item Managed and led a group of 6 college-level students and taught fundamentals of software engineering with real-world applications
-
-	\item Worked directly with customers and created agile project plans with time and cost estimates
-
-	\item Managed production environments in IIS server stack and AWS
-    
+	\item Created and taught a free three-day VueJS workshop for Oregon State University students to teach students to create modern front-end applications.
 \end{itemize} 
 \end{minipage}
 \end{sectiontable}
 
-
-%--------------------------------------------------------------------
-%	PROJECTS
-%--------------------------------------------------------------------
-\vspace*{-\baselineskip}
-\vspace{3mm}
-
-\section{Projects}
-
-\begin{sectiontable}
-{\small\textsc{aug. 2016}} 	& \textbf{Smarter Balanced Sample Items \& Item Viewer Service}\\
-{\small\textsc{apr. 2018}}  & \emph{Center for Applied Systems and Software}\\
-					& \rule{0pt}{2.3ex}\noindent    
-An open source .NET Core SPA web application and Swagger API hosted in AWS using Docker and Kubernetes. \newline
-Teachers, parents, and students use this application to search for test items, understand scoring, and interact with test items using Item Viewer Service. This application will be used by 4,700 educators and will support up to 5,000 concurrent users. \newline
-Item Viewer Service (IVS), a Java web application hosted in AWS using Docker. IVS interacts with single and groups of test questions using all available tools and accessibility, without the need of the entire testing suite.
-
-\end{sectiontable} 
-
-%--------------------------------------------------------------------
-
-\begin{sectiontable}
-{\small\textsc{june 2014}} 	& \textbf{Oregon State University Plant Breeding Program}\\
-{\small\textsc{apr. 2018}}  & \emph{Center for Applied Systems and Software}\\
-					& \rule{0pt}{2.3ex}\noindent    
-Full stack ASP.NET 4.6 MVVM web application (SSRS, SSIS, SQL). \newline
-Web application to assist breeders to determine quality of species, track species, create visual representations of fields, and to record phenotypic information. 
-\end{sectiontable} 
-
-%--------------------------------------------------------------------
-%	End Projects
-%--------------------------------------------------------------------
-
 \section{Education}
 
 \begin{sectiontable}
-
 {\small\textsc{Sep. 2010}} & \textbf{Computer Science}, Computer Systems Option\\ 
 {\small\textsc{Apr. 2014}}	& Oregon State University - \emph{\small Corvallis, OR}\\
-
 \end{sectiontable}
-
 \end{document}
